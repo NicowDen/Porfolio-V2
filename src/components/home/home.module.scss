@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex: 1 0;
+  letter-spacing: 2px;
+  font-size: 44px;
+  gap: 16px;
+  padding: 0 var(--padding-width-big);
+  .left {
+    flex: 1 0;
+    position: sticky;
+    top: 0;
+    max-height: 100vh;
+    padding: var(--padding-height-big) 0;
+  }
+  .right {
+    flex: 1.5 0;
+    padding: var(--padding-height-big) 0;
+  }
+}

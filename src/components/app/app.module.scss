@@ -1,0 +1,9 @@
+.container {
+  flex: 1 0;
+  display: flex;
+  min-height: 100vh;
+  max-height: 100vh;
+  // overflow-x: hidden;
+  // overflow-y: hidden;
+  flex-direction: column;
+}

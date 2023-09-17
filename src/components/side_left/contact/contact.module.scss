@@ -1,0 +1,31 @@
+.container {
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: var(--color4);
+    position: relative;
+    li {
+      font-size: 32px;
+      transition: scale 0.2s;
+      a {
+        display: flex;
+        i {
+          transition: text-shadow 0.2s, color 0.2s;
+        }
+      }
+      a:after {
+        position: absolute;
+        right: 0;
+      }
+    }
+    li:hover {
+      scale: 1.05;
+    }
+    li:hover i {
+      text-shadow: var(--text-shadow2);
+      color: var(--color2);
+    }
+  }
+}

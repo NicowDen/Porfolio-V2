@@ -1,0 +1,17 @@
+.next_arrow {
+  color: var(--color1);
+  position: relative;
+  font-size: 32px;
+  font-weight: bolder;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: scale 0.4s;
+  scale: 0.9;
+  background-color: var(--background-color-less-dark);
+  border-radius: var(--little-radius);
+}
+
+.next_arrow {
+  // left: 0;
+}

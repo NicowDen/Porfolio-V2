@@ -1,0 +1,10 @@
+.container {
+  min-height: 100%;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  div {
+    scroll-margin-top: 12px;
+  }
+}

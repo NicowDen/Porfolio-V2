@@ -1,0 +1,30 @@
+.container {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   align-items: center;
+  //   padding: var(--padding-width-medium);
+  //   gap: 40px;
+  //   transition: background-color 0.3s, box-shadow 0.3s;
+  //   border-radius: 5px;
+  //   @include mxn.containersPassive();
+}
+
+.container:hover {
+  //   @include mxn.containersActive();
+}
+
+.about_me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+// .line {
+//   background-color: var(--color4);
+//   content: "";
+//   min-height: 2px;
+//   min-width: 50%;
+// }

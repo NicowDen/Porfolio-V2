@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  h2 {
+    display: flex;
+    justify-content: center;
+  }
+  .sub_container {
+    display: flex;
+    gap: 16px;
+    .chronology {
+      display: flex;
+      align-items: flex-start;
+      font-weight: 800;
+      div {
+        display: flex;
+        flex-direction: column;
+        padding: 8px;
+        font-family: var(--font2);
+      }
+    }
+    .experience {
+      padding: 8px;
+      display: flex;
+      flex-direction: column;
+      flex: 1 0;
+      border-radius: var(--little-radius);
+      h3 {
+        font-family: var(--font2);
+        font-size: 18px;
+      }
+    }
+  }
+}
