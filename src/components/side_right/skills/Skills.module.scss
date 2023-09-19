@@ -1,6 +1,7 @@
+@use "../../../style/mixin" as mxn;
+
 .container {
-  flex: 1 0;
   display: flex;
-  min-height: 100vh;
   flex-direction: column;
+  gap: 40px;
 }

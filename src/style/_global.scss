@@ -18,11 +18,35 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
-  background-size: cover;
   font-family: var(--font1);
   color: var(--color1);
   scroll-behavior: smooth;
   font-weight: 300;
+  font-size: 18px;
+  display: flex;
+  padding: 0 var(--padding-width-big);
+  overflow: visible;
+  letter-spacing: 1px;
+  @media (max-width: 1200px) {
+    padding: 0 var(--padding-width-medium);
+  }
+  @media (max-width: 1100px) {
+    font-size: 16px;
+  }
+  @media (max-width: 1050px) {
+    font-size: 18px;
+    padding: 0 var(--padding-width-big);
+  }
+  @media (max-width: 750px) {
+    padding: 0 var(--padding-width-medium);
+  }
+
+  @media (max-width: 600px) {
+    padding: 0 var(--padding-width-small);
+  }
+  @media (max-width: 350px) {
+    font-size: 14px;
+  }
 }
 
 ul,
@@ -42,7 +66,34 @@ h2 {
   padding: 0;
   font-size: 28px;
   font-family: var(--font2);
-  // color: var(--color1);
+  @media (max-width: 1200px) {
+    font-size: 26px;
+  }
+  @media (max-width: 1100px) {
+    font-size: 24px;
+  }
+  @media (max-width: 1050px) {
+    font-size: 28px;
+  }
+  @media (max-width: 750px) {
+    font-size: 24px;
+  }
+  @media (max-width: 600px) {
+    font-size: 22px;
+  }
+  @media (max-width: 450px) {
+    font-size: 20px;
+  }
+  @media (max-width: 350px) {
+    font-size: 18px;
+  }
+}
+
+h3 {
+  all: unset;
+  font-family: var(--font2);
+  margin: 0;
+  padding: 0;
 }
 
 button {

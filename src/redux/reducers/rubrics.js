@@ -1,6 +1,6 @@
 const INITIAL_STATE = {
   aboutMe: true,
-  softSkills: false,
+  skills: false,
   background: false,
   projects: false,
 };
@@ -11,15 +11,15 @@ const rubricsReducer = (state = INITIAL_STATE, action) => {
       return {
         ...state,
         aboutMe: true,
-        softSkills: false,
+        skills: false,
         background: false,
         projects: false,
       };
-    case "SOFT_SKILLS_ON":
+    case "SKILLS_ON":
       return {
         ...state,
         aboutMe: false,
-        softSkills: true,
+        skills: true,
         background: false,
         projects: false,
       };
@@ -27,7 +27,7 @@ const rubricsReducer = (state = INITIAL_STATE, action) => {
       return {
         ...state,
         aboutMe: false,
-        softSkills: false,
+        skills: false,
         background: true,
         projects: false,
       };
@@ -35,7 +35,7 @@ const rubricsReducer = (state = INITIAL_STATE, action) => {
       return {
         ...state,
         aboutMe: false,
-        softSkills: false,
+        skills: false,
         background: false,
         projects: true,
       };

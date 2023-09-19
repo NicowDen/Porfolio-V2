@@ -7,16 +7,18 @@ const Me = () => {
         <span>Nicolas</span>
         <div>
           <span className={mc.fast_flicker}>G</span>
-          <span>ren</span>
-          <span className={mc.flicker}>i</span>
-          <span>er</span>
+          <span>re</span>
+          <span className={mc.flicker}>n</span>
+          <span>ier</span>
         </div>
       </div>
       <div className={mc.moreAboutMe}>
-        <h2>Développeur React/Node.js</h2>
-        <p>
-          Passionné, à la recherche d'une première opportunité professionnelle
-        </p>
+        <div>
+          <h2>Développeur React/Node.js</h2>
+          <p>
+            Passionné, à la recherche d'une première opportunité professionnelle
+          </p>
+        </div>
       </div>
     </div>
   );

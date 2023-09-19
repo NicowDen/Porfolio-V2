@@ -1,0 +1,52 @@
+@use "../../../../style/mixin" as mxn;
+
+.container {
+  position: relative;
+  display: flex;
+  min-width: 100%;
+  min-height: 100%;
+  flex-direction: column;
+  max-width: 1vw;
+  overflow: hidden;
+  gap: 4px;
+  h2 {
+    display: flex;
+    justify-content: center;
+  }
+  .slider {
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    min-height: 100%;
+    .skill_container {
+      background-color: var(--background-color-less-dark);
+      display: flex !important;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      scale: 0.98;
+      min-height: 200px;
+      border-radius: var(--little-radius);
+      text-align: center;
+      color: var(--color1);
+      padding: 4px;
+      @media (max-width: 500px) {
+        min-height: 150px;
+      }
+      i {
+        font-size: 54px;
+        @media (max-width: 750px) {
+          font-size: 40px;
+        }
+        @media (max-width: 600px) {
+          font-size: 36px;
+        }
+      }
+      span {
+        font-weight: 800;
+        letter-spacing: 0;
+      }
+    }
+  }
+}

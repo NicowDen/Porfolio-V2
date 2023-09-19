@@ -1,4 +1,4 @@
-export const skills = [
+export const softSkills = [
   { skill: "TRAVAIL D'EQUIPE", icon: "icon-people-outline" },
   { skill: "CURIOSITÉ", icon: "icon-info-outline" },
   { skill: "ANALYSE DES BESOINS", icon: "icon-control-outline" },

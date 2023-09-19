@@ -160,15 +160,37 @@
   flex-direction: column;
   justify-content: center;
   gap: 16px;
+  @media (max-width: 1050px) {
+    gap: 8px;
+  }
   .myName {
     display: flex;
     font-size: 44px;
     font-family: var(--font1);
     text-transform: uppercase;
-    color: red;
-    // color: red;
     animation: shine 2s forwards, flicker 3s infinite;
     gap: 12px;
+    @media (max-width: 1200px) {
+      font-size: 40px;
+    }
+    @media (max-width: 1100px) {
+      font-size: 36px;
+    }
+    @media (max-width: 1050px) {
+      font-size: 44px;
+    }
+    @media (max-width: 750px) {
+      font-size: 40px;
+    }
+    @media (max-width: 600px) {
+      font-size: 36px;
+    }
+    @media (max-width: 450px) {
+      font-size: 32px;
+    }
+    @media (max-width: 300px) {
+      font-size: 24px;
+    }
     .flicker {
       animation: shine 2s forwards, blink 5s 2s infinite;
     }
@@ -177,13 +199,31 @@
     }
   }
   .moreAboutMe {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
     h2 {
       font-family: var(--font2);
       text-shadow: none;
     }
-
-    p {
-      font-size: 16px;
+    .icons {
+      display: flex;
+      gap: 12px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      li {
+        display: flex;
+        align-items: center;
+        div {
+          min-width: 50px;
+          min-height: 50px;
+          @media (max-width: 350px) {
+            min-width: 40px;
+            min-height: 40px;
+          }
+        }
+      }
     }
   }
 }

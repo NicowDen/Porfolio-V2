@@ -1,19 +1,37 @@
 .container {
   display: flex;
   flex: 1 0;
-  letter-spacing: 2px;
-  font-size: 44px;
+  // letter-spacing: 2px;
   gap: 16px;
-  padding: 0 var(--padding-width-big);
+  @media (max-width: 1050px) {
+    flex-direction: column;
+  }
   .left {
     flex: 1 0;
     position: sticky;
     top: 0;
     max-height: 100vh;
     padding: var(--padding-height-big) 0;
+    @media (max-width: 1050px) {
+      position: relative;
+      display: flex;
+      padding: 0;
+      padding-top: var(--padding-height-small);
+    }
   }
   .right {
-    flex: 1.5 0;
+    flex: 2 0;
     padding: var(--padding-height-big) 0;
+    @media (max-width: 1050px) {
+      flex: 1 0;
+    }
+    @media (max-width: 750px) {
+      padding: var(--padding-height-medium) 0;
+    }
+    @media (max-width: 600px) {
+    }
+    @media (max-width: 450px) {
+      padding: var(--padding-height-small) 0;
+    }
   }
 }

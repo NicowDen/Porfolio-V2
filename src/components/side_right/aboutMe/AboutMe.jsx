@@ -11,7 +11,7 @@ const AboutMe = ({ aboutMe, aboutMeComponent }) => {
       }
     >
       <div className={mc.about_me}>
-        <h2>À propos de moi</h2>
+        <h2>À PROPOS DE MOI</h2>
         <p>
           En 2022, fort d'une expérience de 15 ans dans le commerce qui aura
           décuplé mon goût du challenge, je me lance un nouveau défi, devenir{" "}
@@ -25,7 +25,7 @@ const AboutMe = ({ aboutMe, aboutMeComponent }) => {
       </div>
       {/* <div className={mc.line}></div> */}
       <div className={mc.about_me}>
-        <h2>Plus sur moi?</h2>
+        <h2>PLUS SUR MOI?</h2>
         <p>
           Eternnel insatisfait, j'aime le travail bien fait. Travailler sous
           <span className="highlight"> pression</span> ne me fait pas peur,
@@ -37,16 +37,14 @@ const AboutMe = ({ aboutMe, aboutMeComponent }) => {
       </div>
       {/* <div className={mc.line}></div> */}
       <div className={mc.about_me}>
-        <h2>Encore plus?</h2>
+        <h2>ENCORE PLUS?</h2>
         <p>
           Fan inconditionnel de cinéma, j'aime les films avec un scénario
           <span className="highlight"> original</span> et
-          <span className="highlight"> bien ficellé</span> et c'est un shéma que
+          <span className="highlight"> bien ficellé, </span> un shéma que
           j'essaye de reproduire quand je développe. Je suis également féru de
           musique, et intimement persuadé que rien ne vaut les vieux sons{" "}
-          <span className="highlight"> rocks </span>
-          d'avant ! Et si vous le souhaitez je serai ravi d'en débattre des
-          heures durant.
+          <span className="highlight"> rocks </span>!
         </p>
       </div>
     </div>

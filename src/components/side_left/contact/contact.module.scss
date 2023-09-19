@@ -4,11 +4,14 @@
     display: flex;
     align-items: center;
     gap: 16px;
-    color: var(--color4);
+    color: var(--color3);
     position: relative;
     li {
       font-size: 32px;
       transition: scale 0.2s;
+      @media (max-width: 1050px) {
+        font-size: 28px;
+      }
       a {
         display: flex;
         i {
@@ -20,6 +23,7 @@
         right: 0;
       }
     }
+
     li:hover {
       scale: 1.05;
     }

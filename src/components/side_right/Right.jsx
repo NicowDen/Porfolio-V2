@@ -2,19 +2,20 @@ import mc from "./right.module.scss";
 import { useDispatch } from "react-redux";
 //components//
 import AboutMe from "./aboutMe/AboutMe";
-import SoftSkills from "./softSkills/SoftSkills";
+import Skills from "./skills/Skills";
 import Background from "./background/Background";
 import Projects from "./myProjects/Projects";
 
 const Right = ({
   aboutMe,
-  softSkills,
+  skills,
   background,
   projects,
   aboutMeComponent,
   backgroundComponent,
-  softSkillsComponent,
+  skillsComponent,
   projectsComponent,
+  windowWidth,
 }) => {
   const dispatch = useDispatch();
   const goRubric = (rubric) => {
@@ -26,10 +27,11 @@ const Right = ({
         <AboutMe aboutMe={aboutMe} aboutMeComponent={aboutMeComponent} />
       </div>
 
-      <div id="softSkills">
-        <SoftSkills
-          softSkills={softSkills}
-          softSkillsComponent={softSkillsComponent}
+      <div id="skills">
+        <Skills
+          skills={skills}
+          skillsComponent={skillsComponent}
+          windowWidth={windowWidth}
         />
       </div>
 

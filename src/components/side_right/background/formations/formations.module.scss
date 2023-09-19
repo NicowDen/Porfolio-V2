@@ -6,30 +6,31 @@
     display: flex;
     justify-content: center;
   }
-  .sub_container {
+  .formations {
     display: flex;
+    flex-direction: column;
     gap: 16px;
-    .chronology {
+    .sub_container {
       display: flex;
-      align-items: flex-start;
-      font-weight: 800;
-      div {
+      gap: 16px;
+      padding: 8px;
+
+      .chronology {
+        display: flex;
+        align-items: flex-start;
+        font-weight: 800;
+        div {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          font-family: var(--font2);
+        }
+      }
+      .formation {
         display: flex;
         flex-direction: column;
-        padding: 8px;
-        font-family: var(--font2);
-      }
-    }
-    .formation {
-      padding: 8px;
-      display: flex;
-      flex-direction: column;
-      flex: 1 0;
-      // justify-content: space-between;
-      border-radius: var(--little-radius);
-      h3 {
-        font-family: var(--font2);
-        font-size: 18px;
+        flex: 1 0;
+        border-radius: var(--little-radius);
       }
     }
   }

@@ -1,7 +1,7 @@
 import mc from "./nav.module.scss";
 import { useDispatch } from "react-redux";
 
-const Nav = ({ aboutMe, softSkills, background, projects }) => {
+const Nav = ({ aboutMe, skills, background, projects }) => {
   const dispatch = useDispatch();
   const goRubric = (rubric) => {
     setTimeout(() => {
@@ -25,14 +25,12 @@ const Nav = ({ aboutMe, softSkills, background, projects }) => {
       </div>
 
       <div>
-        <a href="#softSkills">
+        <a href="#skills">
           <button
-            onClick={() => goRubric("SOFT_SKILLS_ON")}
-            className={!softSkills ? mc.button : mc.button_active}
+            onClick={() => goRubric("SKILLS_ON")}
+            className={!skills ? mc.button : mc.button_active}
           >
-            <span className={softSkills ? mc.span_active : ""}>
-              Soft skills
-            </span>
+            <span className={skills ? mc.span_active : ""}>Skills</span>
           </button>
         </a>
       </div>
